@@ -5,8 +5,8 @@ import { Brain, Settings, CheckCircle, AlertCircle, Zap, Code2, Database, Rocket
 
 const SystemDesign = () => {
   const [activeTab, setActiveTab] = useState("overview")
-  const [selectedPhase, setSelectedPhase] = useState(null)
-  const [expandedDataset, setExpandedDataset] = useState(null)
+  const [selectedPhase, setSelectedPhase] = useState<number | null>(null)
+  const [expandedDataset, setExpandedDataset] = useState<number | null>(null)
 
   const datasets = [
     {
